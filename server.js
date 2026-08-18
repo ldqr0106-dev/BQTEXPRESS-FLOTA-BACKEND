@@ -1,10 +1,8 @@
-import express from 'express';
-import cors from 'cors';
-import jwt from 'jsonwebtoken';
-import { createClient } from '@supabase/supabase-js';
-import dotenv from 'dotenv';
-
-dotenv.config();
+const express = require('express');
+const cors = require('cors');
+const jwt = require('jsonwebtoken');
+const { createClient } = require('@supabase/supabase-js');
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
